@@ -1,3 +1,4 @@
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 public class Main {
@@ -11,7 +12,8 @@ public class Main {
         final long startTimeMillis = System.currentTimeMillis();
 
         while (startTimeMillis + MAX_RUN_MILLIS >= System.currentTimeMillis()) {
-            System.out.println("Version: " + VERSION + ",  I'm: [" + uuid + "]");
+            final String now = LocalDateTime.now() + "";
+            System.out.println("[" + now + "] - Version: " + VERSION + ",  I'm: [" + uuid + "]");
             Thread.sleep(SLEEP_TIME_MILLIS);
         }
         System.out.println("Done from [" + uuid + "]");
