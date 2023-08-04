@@ -1,10 +1,8 @@
-
-
-# 1. Build the program
+# Build the program
 
     % javac Main.java
 
-# 2. BUild the docker image and give it a tag name
+# BUild the docker image and give it a tag name
 Note that we are running on the same directory.  Use "dot" at the end of the docker command.
 
     % docker build -t <tag-name>  .
